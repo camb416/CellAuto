@@ -1,0 +1,89 @@
+body{
+background-color:#DEDFD9;
+font-family:sans-serif;
+font-size:0.7em;
+}
+#clicker{
+width:40px;
+height:15px;
+padding-top:4px;
+margin-left:10px;
+border:1px solid #AFADAB;
+
+border-radius: 5px;
+text-align:center;
+margin-top:5px;
+cursor:pointer;
+
+}
+
+#canvas{
+
+
+
+border:1px solid #AFADAB;
+border-radius: 15px;
+
+background-color:#FFFFFF;
+width:1280px;
+height:720px;
+}
+
+#canvasdiv{
+margin:0px auto;
+width:1280px;
+height:720px;
+}
+
+
+#ui{
+margin:30px;
+border:1px solid #AFADAB;
+border-radius: 15px;
+padding:10px;
+background-color:#888888;
+
+
+position:absolute;
+top:0;
+left:0;
+
+}
+#container{
+width:100%;
+text-align:center;
+margin:40px;
+height:100px;
+}
+.rule-clicker{
+float:left;
+width:10px;
+height:10px;
+border:1px solid #AFADAB;
+border-radius: 5px;
+margin:5px;
+}
+.whitebox{
+border-radius: 5px;
+float:left;
+width:10px;
+height:10px;
+background-color:white;
+}
+.blackbox{
+border-radius: 5px;
+float:left;
+width:10px;
+height:10px;
+background-color:black;
+}
+.rule-head{
+
+margin:5px ;
+float:left;
+height:10px;
+}
+.rule-ui{
+clear:both;
+height:30px;
+}
