@@ -33,14 +33,11 @@
         // get the current value of `data`
         theObject.css("background-color","#000000");
       },
+      
       getRule: function( num ) {
-      var queryString = ".rule-head r"+num;
+      // var queryString = ".checkbox"+num;
      // alert($('rule-clicker').eq(num).css("background-color"));
-      if($('.rule-clicker').eq(num).css("background-color")=="rgb(0, 0, 0)"){
-      return 1;
-      } else {
-      return 0;
-      }
+      return $('.checkbox').eq(num).attr('checked');
       
       }
       
