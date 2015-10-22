@@ -27,7 +27,10 @@
         
         
     });
-    $('.container').append('<img src="http://cameronbrowning.com/cbsig.png"  style="position:absolute;left:20px;bottom:20px;" />');
+    
+    // sig file missing
+    // $('.container').append('<img src="http://cameronbrowning.com/cbsig.png"  style="position:absolute;left:20px;bottom:20px;" />');
+    
       },
       makeBlack: function(theObject) {
         // get the current value of `data`
