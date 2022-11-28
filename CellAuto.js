@@ -25,6 +25,8 @@
       },
       
       init: function(numCols_in,numRows_in){
+          console.log("hello");
+          console.log(window);
         numRows = numRows_in;
         numCols = numCols_in;
         cells = new Array(numRows);

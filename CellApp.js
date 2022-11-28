@@ -1,6 +1,11 @@
 (function( global ) {
   var CellApp = (function() {
 
+    //TODO: remove JQuery (it's 2022)
+
+
+
+
     // these are private variables
     //var data = "secret";
     //var numRows = -1;
