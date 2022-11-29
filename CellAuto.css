@@ -1,114 +1,120 @@
- /*TODO:  add SCSS or SASS preprocessing*/
+/*TODO:  add SCSS or SASS preprocessing*/
 
-body{
-background-color:#7B8887;
-font-family:sans-serif;
-font-size:0.7em;
-
-}
-#clicker{
-width:40px;
-height:15px;
-padding-top:4px;
-margin-left:10px;
-border:1px solid #AFADAB;
-background-color:#DEDFD9;
-border-radius: 5px;
-text-align:center;
-margin-top:5px;
-cursor:pointer;
+body {
+    background-color: rgba(0, 196, 255, 0.67);
+    font-family: sans-serif;
+    font-size: 0.7em;
 
 }
 
-#clicker:hover{
-border:1px solid #AFADAB;
-background-color:#8E6F79;
-}
-
-#canvas{
-
-
-
-border:1px solid #AFADAB;
-border-radius: 15px;
-
-background-color:#FFFFFF;
-width:1280px;
-height:720px;
-
--moz-box-shadow: 1px 1px 3px #000;
--webkit-box-shadow: 1px 1px 3px #000;
-box-shadow: 1px 1px 3px #000;
-/* For IE 8 */
--ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#000000')";
-/* For IE 5.5 - 7 */
-filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#000000');
-}
-
-#canvasdiv{
-margin:0px auto;
-width:1280px;
-height:720px;
-}
-
-
-#ui{
-margin:30px;
-border:1px solid #AFADAB;
-border-radius: 15px;
-padding:10px;
-background-color:#888888;
-
-
-position:absolute;
-top:0;
-left:0;
-width:60px;
-
--moz-box-shadow: 1px 1px 3px #000;
--webkit-box-shadow: 1px 1px 3px #000;
-box-shadow: 1px 1px 3px #000;
-/* For IE 8 */
--ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#000000')";
-/* For IE 5.5 - 7 */
-filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#000000');
+#clicker {
+    width: 40px;
+    height: 15px;
+    padding-top: 4px;
+    margin-left: 10px;
+    border: 1px solid #AFADAB;
+    background-color: #DEDFD9;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 5px;
+    cursor: pointer;
 
 }
-#container{
-width:100%;
-text-align:center;
-margin:40px;
-height:100px;
-}
-.rule-clicker{
-float:left;
-width:10px;
-height:10px;
-border:1px solid #AFADAB;
-border-radius: 5px;
-margin:5px;
-}
-.whitebox{
-border-radius: 5px;
-float:left;
-width:10px;
-height:10px;
-background-color:white;
-}
-.blackbox{
-border-radius: 5px;
-float:left;
-width:10px;
-height:10px;
-background-color:black;
-}
-.rule-head{
 
-margin:5px ;
-float:left;
-height:10px;
+#clicker:hover {
+    border: 1px solid #AFADAB;
+    background-color: #8E6F79;
 }
-.rule-ui{
-clear:both;
-height:30px;
+
+#canvas {
+
+
+    border: 1px solid #AFADAB;
+    border-radius: 15px;
+
+    background-color: #FFFFFF;
+    width: 1280px;
+    height: 720px;
+
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+    /* For IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#000000')";
+    /* For IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#000000');
+}
+
+#canvasdiv {
+    margin: 0px auto;
+    width: 1280px;
+    height: 720px;
+}
+
+
+#ui {
+    margin: 30px;
+    border: 1px solid #AFADAB;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #888888;
+
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+    /* For IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#000000')";
+    /* For IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#000000');
+
+}
+
+#container {
+    width: 100%;
+    text-align: center;
+    margin: 40px;
+    height: 100px;
+}
+
+.rule-clicker {
+    float: left;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #AFADAB;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.whitebox {
+    border-radius: 5px;
+    float: left;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+}
+
+.blackbox {
+    border-radius: 5px;
+    float: left;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+}
+
+.rule-head {
+
+    margin: 5px;
+    float: left;
+    height: 10px;
+}
+
+.rule-ui {
+    clear: both;
+    height: 30px;
 }

@@ -1,70 +1,108 @@
-<html>  
- <head> 
- <title>Cellular Automation in HTML5 Canvas</title>
-     <!-- TODO: add a lightweight CSS framework for Bootstrap or Material or something -->
- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> 
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.19/jquery-ui.min.js"></script>
-<LINK REL=StyleSheet HREF="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.19/themes/ui-lightness/jquery-ui.css" TYPE="text/css" MEDIA="screen">
- 
-  <script type="application/javascript" src="CellAuto.js"></script> 
-    <script type="application/javascript" src="CellApp.js"></script> 
+<html>
+<head>
+    <title>Cellular Automation in HTML5 Canvas</title>
+    <!-- TODO: add a lightweight CSS framework for Bootstrap or Material or something -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript"
+            src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.19/jquery-ui.min.js"></script>
+    <LINK REL=StyleSheet HREF="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.19/themes/ui-lightness/jquery-ui.css"
+          TYPE="text/css" MEDIA="screen">
 
-  <link rel="stylesheet" type="text/css"
-media="screen" href="CellAuto.css">
- </head>  
- <body onload="CellApp.init();Module.init(1280,720);Module.setRule(0,0,0,0,0,0,0,0);">  
-  <div class="container">
+    <script type="application/javascript" src="CellAuto.js"></script>
+    <script type="application/javascript" src="CellApp.js"></script>
+
+    <link rel="stylesheet" type="text/css"
+          media="screen" href="CellAuto.css">
+</head>
+<body onload="CellApp.init();Module.init(1280,720);Module.setRule(0,0,0,0,0,0,0,0);">
+Hello, World!
+<div class="container">
     <div id="canvasdiv">
-    <canvas id="canvas" width="1280px" height="720px"></canvas>  
+        <canvas id="canvas" width="1280px" height="720px"></canvas>
     </div>
-   <div id="ui">
-   
-   <div id="rule-maker">
-   
-   <div class="rule-ui">
-    <div class="rule-head r1"><div class="whitebox" ></div><div class="whitebox" ></div><div class="whitebox" ></div></div>
-    <input type="checkbox" class="checkbox" />
+    <div id="ui">
+
+        <div id="rule-maker">
+
+            <div class="rule-ui">
+                <div class="rule-head r1">
+                    <div class="whitebox"></div>
+                    <div class="whitebox"></div>
+                    <div class="whitebox"></div>
+                </div>
+                <input type="checkbox" class="checkbox"/>
+            </div>
+
+            <div class="rule-ui">
+                <div class="rule-head r2">
+                    <div class="whitebox"></div>
+                    <div class="whitebox"></div>
+                    <div class="blackbox"></div>
+                </div>
+                <input type="checkbox" class="checkbox" checked/>
+            </div>
+
+            <div class="rule-ui">
+                <div class="rule-head r3">
+                    <div class="whitebox"></div>
+                    <div class="blackbox"></div>
+                    <div class="whitebox"></div>
+                </div>
+                <input type="checkbox" class="checkbox" checked/>
+            </div>
+
+            <div class="rule-ui">
+                <div class="rule-head r4">
+                    <div class="whitebox"></div>
+                    <div class="blackbox"></div>
+                    <div class="blackbox"></div>
+                </div>
+                <input type="checkbox" class="checkbox" checked/>
+            </div>
+
+            <div class="rule-ui">
+                <div class="rule-head r5">
+                    <div class="blackbox"></div>
+                    <div class="whitebox"></div>
+                    <div class="whitebox"></div>
+                </div>
+                <input type="checkbox" class="checkbox" checked/>
+            </div>
+
+            <div class="rule-ui">
+                <div class="rule-head r6">
+                    <div class="blackbox"></div>
+                    <div class="whitebox"></div>
+                    <div class="blackbox"></div>
+                </div>
+                <input type="checkbox" class="checkbox"/>
+            </div>
+
+            <div class="rule-ui">
+                <div class="rule-head r7">
+                    <div class="blackbox"></div>
+                    <div class="blackbox"></div>
+                    <div class="whitebox"></div>
+                </div>
+                <input type="checkbox" class="checkbox"/>
+            </div>
+
+            <div class="rule-ui">
+                <div class="rule-head r8">
+                    <div class="blackbox"></div>
+                    <div class="blackbox"></div>
+                    <div class="blackbox"></div>
+                </div>
+                <input type="checkbox" class="checkbox"/>
+            </div>
+        </div>
+
+        <div id="clicker"
+             onclick="Module.clear();Module.setRule(CellApp.getRule(0),CellApp.getRule(1),CellApp.getRule(2),CellApp.getRule(3),CellApp.getRule(4),CellApp.getRule(5),CellApp.getRule(6),CellApp.getRule(7));Module.calcAllTheCells();">
+            DRAW
+        </div>
+        <div id="status"></div>
     </div>
-    
-    <div class="rule-ui">
-        <div class="rule-head r2"><div class="whitebox" ></div><div class="whitebox" ></div><div class="blackbox" ></div></div>
-    <input type="checkbox" class="checkbox" />
-    </div>
-    
-    <div class="rule-ui">
-        <div class="rule-head r3"><div class="whitebox" ></div><div class="blackbox" ></div><div class="whitebox" ></div></div>
-    <input type="checkbox" class="checkbox" />
-   </div>
-   
-   <div class="rule-ui"> 
-        <div class="rule-head r4"><div class="whitebox" ></div><div class="blackbox" ></div><div class="blackbox" ></div></div>
-   <input type="checkbox" class="checkbox" />
-    </div>
-    
-    <div class="rule-ui">
-        <div class="rule-head r5"><div class="blackbox" ></div><div class="whitebox" ></div><div class="whitebox" ></div></div>
-   <input type="checkbox" class="checkbox" />
-    </div>
-    
-    <div class="rule-ui">
-        <div class="rule-head r6"><div class="blackbox" ></div><div class="whitebox" ></div><div class="blackbox" ></div></div>
-    <input type="checkbox" class="checkbox" />
-    </div>
-    
-    <div class="rule-ui">
-        <div class="rule-head r7"><div class="blackbox" ></div><div class="blackbox" ></div><div class="whitebox" ></div></div>
-    <input type="checkbox" class="checkbox" />
-    </div>
-    
-    <div class="rule-ui">
-        <div class="rule-head r8"><div class="blackbox" ></div><div class="blackbox" ></div><div class="blackbox" ></div></div>
-  <input type="checkbox" class="checkbox" />
-   </div>
-   </div>
-   
-   <div id="clicker" onclick="Module.clear();Module.setRule(CellApp.getRule(0),CellApp.getRule(1),CellApp.getRule(2),CellApp.getRule(3),CellApp.getRule(4),CellApp.getRule(5),CellApp.getRule(6),CellApp.getRule(7));Module.calcAllTheCells();">DRAW</div>
-   <div id="status"></div>
-   </div>
-   </div>
- </body>  
+</div>
+</body>
 </html> 
